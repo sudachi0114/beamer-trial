@@ -1,0 +1,30 @@
+% \documentclass[12pt, unicode]{beamer}
+\documentclass[dvipdfmx, 12pt]{beamer}  % コンパイルには dvipdfmx を用いる
+
+\usetheme{Copenhagen}
+
+\renewcommand{\kanjifamilydefault}{\gtdefault}  % 既定をゴシック体にする
+
+\title{Beamer Tutorial}
+\author{鈴木 大智}
+\date[2021/02/23]{\TeX でスライドを作ろう with Beamer}
+\institute[日本大学大学院]{日本大学大学院 理工学研究科 数学専攻}
+
+\begin{document}
+
+\frame{\maketitle}
+
+\begin{frame}{frame title}
+
+  果物について
+  
+  \begin{itemize}
+    \item apple
+    \item orange
+    \item banana
+  \end{itemize}
+\end{frame}
+
+\frame{\centering \Large Thank you for your attention!!}
+
+\end{document}
