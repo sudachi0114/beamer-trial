@@ -49,6 +49,34 @@
 
 \end{frame}
 
+
+\begin{frame}{数式も試してみる}
+  $y = x^2 + 3x -5$
+
+  \begin{eqnarray*}
+    y &=& x^2 + 3x -5 \\
+    z &=& \log(x)
+  \end{eqnarray*}
+
+  この和 ~ $ {\displaystyle
+    \sum_{i=0}^{N} \frac{1}{n^2}
+  } $ ~ を考えたい。あ、考え終わっちゃった。
+
+  \begin{block}{ イプシロン-N 論法 }
+    $ {\displaystyle
+      {}^{\forall} \varepsilon > 0, ~ {}^{\exists} N \in \mathbb{N}, ~ n \geq N ~
+      s.t. ~ | x - x_n | < \varepsilon
+    } $
+  \end{block}
+
+  \begin{exampleblock}{例}
+    \begin{displaymath}
+      \lim_{n \rightarrow \infty} \frac{1}{2^n} = 0
+    \end{displaymath}
+  \end{exampleblock}
+
+\end{frame}
+
 \frame{\centering \Large Thank you for your attention!!}
 
 \end{document}
