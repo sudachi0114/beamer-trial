@@ -145,6 +145,48 @@
 \end{frame}
 
 % -- >8--  >8--  >8-- >8-- >8-- >8-- >8-- >8-- >8--  >8-- >8-- >8-- %
+\begin{frame}{pause と uncover}
+  % タイミングの指定:
+  %   <i> : i番目だけ
+  %   <-i>: i番目まで
+  %   <i->: i番目以降
+  % を表す。
+  %   pause は単純に、「次のスライドで出す」という隠し方で、
+  %   uncover はより柔軟に設定できる、という印象です。
+
+  \begin{columns}[c]  % 中央をあわせる
+
+    \begin{column}{0.3\textwidth}
+      \includegraphics[width=\columnwidth]{./media/kenta2.jpg}
+    \end{column}
+
+    \begin{column}{0.65\textwidth} % 横幅の65％
+      \begin{block}{コメントブロック}
+        \begin{itemize}
+          \item<1-> タイミング1「以降」出現するコメント
+          \item<2-> タイミング2「以降」出現するコメント
+          \item<-3> タイミング3「まで」出現する (4で消える) コメント
+        \end{itemize}
+      \end{block}
+    \end{column}
+
+  \end{columns}
+
+  \uncover<4>{
+    \begin{block}{ダジャレ}
+      ふとんがふっとんだ！！
+    \end{block}
+  }
+
+  \uncover<5>{
+    \begin{alertblock}{注意}
+      つまらないしゃれはやめなしゃれ。
+    \end{alertblock}
+  }
+
+\end{frame}
+
+% -- >8--  >8--  >8-- >8-- >8-- >8-- >8-- >8-- >8--  >8-- >8-- >8-- %
 \frame{\centering \Large Thank you for your attention!!}
 
 \end{document}
