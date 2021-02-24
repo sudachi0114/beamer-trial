@@ -90,6 +90,36 @@
 \end{frame}
 
 % -- >8--  >8--  >8-- >8-- >8-- >8-- >8-- >8-- >8--  >8-- >8-- >8-- %
+\begin{frame}{columns を利用した配置}
+  \begin{block}{top block}
+    上段のブロック
+  \end{block}
+
+  \begin{columns}[c]  % 中央を合わせる
+  % \begin{columns}[b]  % 下を合わせる
+
+    % column1
+    \begin{column}{0.3\textwidth}  % 横幅の30%
+      \includegraphics[width=\columnwidth]{./media/kenta2.jpg}
+    \end{column}
+
+    % column2
+    \begin{column}{0.65\textwidth}  % 横幅の65%
+      \begin{block}{図の説明}
+        うちの家族で飼っている犬です。\\
+        名前を「けんた」と言います。
+      \end{block}
+    \end{column}
+
+  \end{columns}
+
+  \begin{block}{bottom block}
+    下段のブロック
+  \end{block}
+
+\end{frame}
+
+% -- >8--  >8--  >8-- >8-- >8-- >8-- >8-- >8-- >8--  >8-- >8-- >8-- %
 \frame{\centering \Large Thank you for your attention!!}
 
 \end{document}
