@@ -3,7 +3,7 @@ all: slide.pdf
 	open slide.pdf
 
 slide.dvi: slide.tex
-	platex $<
+	platex $< && platex $<
 
 slide.pdf: slide.dvi
 	dvipdfmx -o slide.pdf $<
