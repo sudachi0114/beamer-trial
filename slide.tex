@@ -1,16 +1,24 @@
 % \documentclass[12pt, unicode]{beamer}
-\documentclass[dvipdfmx, 12pt]{beamer}  % コンパイルには dvipdfmx を用いる
+% \documentclass[dvipdfmx, 12pt]{beamer}  % コンパイルには dvipdfmx を用いる
+\documentclass[dvipdfmx]{beamer}  % 最小限?
+
+\usepackage{pxjahyper}  % tableOfContents の文字化け防止
+\usepackage{graphicx}  % 各種画像の差し込み用ライブラリ
+\usepackage{amsmath, amssymb}  % 標準数式表現の拡張
+
+\renewcommand{\kanjifamilydefault}{\gtdefault}  % 日本語フォントの既定をゴシック体にする
 
 \usetheme{Copenhagen}
 
-\renewcommand{\kanjifamilydefault}{\gtdefault}  % 既定をゴシック体にする
-
+% -- >8--  >8--  >8-- >8-- >8-- >8-- >8-- >8-- >8--  >8-- >8-- >8-- %
 \title{Beamer Tutorial}
-\author{鈴木 大智}
-\date[2021/02/23]{\TeX でスライドを作ろう with Beamer}
+\author[sudachi]{鈴木 大智}
+\date[2021/02/25]{\TeX でスライドを作ろう with Beamer}
 \institute[日本大学大学院]{日本大学大学院 理工学研究科 数学専攻}
 % [..] に省略した表現が書ける
 
+
+% -- >8--  >8--  >8-- >8-- >8-- >8-- >8-- >8-- >8--  >8-- >8-- >8-- %
 \begin{document}
 
 \frame{\maketitle}
